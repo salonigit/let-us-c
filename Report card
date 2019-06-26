@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main()
+{ 
+    int a,b,c,d,e,per;
+    printf("ENTER MATHS MARKS: ");
+    scanf("%d",&a);
+    printf("ENTER PHYSICS MARKS: ");
+    scanf("%d",&b);
+    printf("ENTER ENGLISHMARKS: ");
+    scanf("%d",&c);
+    printf("ENTER HINDI MARKS: ");
+    scanf("%d",&d);
+    printf("ENTER BIOLOGY MARKS: ");
+    scanf("%d",&e);
+    per=(a+b+c+d+e)/5;
+    printf("YOUR PERCENTAGE IS %d \n",per);
+    if(per>=60)
+    printf("FIRST DIVISION\n");
+    else if(per>=50)
+    printf("SECOND DIVISION\n");
+    else if(per>=40)
+    printf("THIRD DIVISION\n");
+    else
+    printf("FAIL\n");
+    return 0;
+}
