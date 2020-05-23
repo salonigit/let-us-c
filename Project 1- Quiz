@@ -1,0 +1,609 @@
+#include<stdio.h>
+#include<conio.h>
+#include<ctype.h>
+#include<stdlib.h>
+#include<string.h>
+int main ()
+    {
+      char ch = 'y', name[20];
+      int x, answer, choice, choice1, points = 0;
+      printf ("\n\n\n\t\t\t\t ARE YOU");
+      printf ("\n\t\t\t  READY FOR THE QUIZ?");
+      printf ("\n\t\t\t (IF YES THEN PRESS %c)", ch);
+      printf ("\n\n\t");
+      scanf ("%c", &ch);
+      if (ch == 'y' || 'Y')
+        {
+          system ("clear");
+        start:
+          system ("clear");
+          printf ("\t\t\tC PROGRAM QUIZ GAME\n");
+          printf ("\n\t\t________________________________________");
+    
+          printf ("\n\t\t\t   WELCOME ");
+          printf ("\n\t\t\t      to ");
+          printf ("\n\t\t\t   THE GAME ");
+          printf ("\n\t\t________________________________________");
+          printf ("\n\t\t________________________________________");
+          printf ("\n\t\t   BECOME A MILLIONAIRE!!!!!!!!!!!    ");
+          printf ("\n\t\t________________________________________");
+          printf ("\n\t\t________________________________________");
+          printf ("\n\t\t > Press 1 to start the game");
+          printf ("\n\t\t > Press 2 to view the highest score  ");
+          printf ("\n\t\t > Press 3 to reset score");
+          printf ("\n\t\t > press 4 for help            ");
+          printf ("\n\t\t > press 5 to quit             ");
+          printf ("\n\t\t________________________________________\n\n");
+          printf("\n\n\t");
+          scanf ("%d", &choice);
+          switch (choice)
+    	{
+    	case (1):
+    
+    	  {
+    	    system ("clear");
+    	    printf ("\n\t\t ENTER YOUR NAME:");
+    	    scanf ("%s", name);
+    	    printf ("\n\t\t\t AND YOUR GAME STARTS HERE");
+    	    system ("clear");
+    	  theme:
+    	    system ("clear");
+    	    printf ("\n\n\t\t\t ENTER YOU CHOICE");
+    	    printf ("\n\n\t\t1.WILDLIFE");
+    	    printf ("\n\n\t\t2.BOOKS AND AUTHORS");
+    	    printf ("\n\n\t\t3.CITIES");
+    	    printf ("\n\n\t\t4.MYTHOLOGY");
+    	    printf ("\n\n\t\t5.SPORTS");
+    	    printf ("\n\n\t");
+    	    scanf ("%d", &choice1);
+    	    system ("clear");
+    
+    	    switch (choice1)
+    	      {
+    	      case (1):
+    		{
+    		  printf ("\n\t1. When was the Project Tiger launched?");
+    		  printf ("\n\t1. 1973 2. 1974 3. 1975 4. 1976");
+    		  printf ("\n\n\t");
+    		  scanf ("%d", &answer);
+    		  if (answer == 1)
+    		    {
+    		      points = points + 5;
+    		      printf ("\n\n\n\t\t YOUR ANSWER IS CORRECT!!!");
+    		    }
+    		  else
+    		    {
+    		      points = points - 1;
+    		      printf ("\n\n\n\t\t WRONG!!! CORRECT ANSWER IS 1973.");
+    		    }
+    		  system ("clear");
+    		  printf ("\n\n\t");
+    		  printf ("\n\t2. What does the term 'MIKE' stands for");
+    		  printf("\n\t1. Monitoring of Illegal Killing of Elephants");
+    		  printf ("\n\t2. Monitoring of Illegal Killing in Europe");
+    		  printf ("\n\t3. Monitoring of Illegal Killing of Eagle");
+    		  printf("\n\t4. Monitoring of Illegal Killing of Endangered Species");
+    		  printf ("\n\n\t");
+    		  scanf ("%d", &answer);
+    		  if (answer == 1)
+    		    {
+    		      points = points + 5;
+    		      printf ("\n\n\n\t\t YOUR ANSWER IS CORRECT.");
+    		    }
+    		  else
+    		    {
+    		      points = points - 1;
+    		      printf ("\n\n\n\t\t WRONG !!! CORRECT ANSWER IS 1.");
+    		    }
+    		  system ("clear");
+    		  printf ("\n\t 3.How many hearts does an octopus have");
+    		  printf ("\n\t(1) 9 (2) 5(3) 3(4) 2");
+    		  printf ("\n\n\t");
+    		  scanf ("%d", &answer);
+    		  if (answer == 3)
+    		    {
+    		      printf ("\n\n\n\t\t YOUR ANSWER IS CORRECT");
+    		      points = points + 5;
+    		    }
+    		  else
+    		    {
+    		      printf ("\n\n\n\t\tWRONG !!! CORRECT ANSWER IS 3 ");
+    		      points = points + 5;
+    		    }
+    		  system ("clear");
+    		  printf("\n\t4. When was the Indian Board for Wildlife constituted?");
+    		  printf("\n\t1.1952  2.1950  3.1949  4.1948");
+    		  printf("\n\n\t");
+    		  scanf ("%d", &answer);
+    		  if (answer == 1)
+    		    {
+    		      printf ("\n\n\n\t\t YOUR ANSWER IS CORRECT");
+    		      points = points + 5;
+    		    }
+    		  else
+    		    {
+    		      printf ("\n\n\n\t\t WRONG !!! CORRECT ANSWER IS 1");
+    		      points = points + 5;
+    		    }
+    		  system ("clear");
+    		  printf("\n\t5. Which of the following national park is the natural habitat of Kashmiri Stag?");
+    		  printf("\n\t1.Nandankanan National Park    2.Padmaja Naidu Himalayan Zoological Park");
+    		  printf("\n\t3.Dachigam National Park       4.Kaziranga Sanctuary");
+    		  printf("\n\n\t");
+    		  scanf ("%d", &answer);
+    		  if (answer == 3)
+    		    {
+    		      printf ("\n\n\n\t\t YOUR ANSWER IS CORRECT");
+    		      points = points + 5;
+    		    }
+    		  else
+    		    {
+    		      printf ("\n\n\n\t\t WRONG !!! CORRECT ANSWER IS 3");
+    		      points = points + 5;
+    		    }
+    		  system ("clear");
+    		  printf ("\n\tYOUR TOTAL SCORE IS : %d", points);
+    		  printf ("\n\n\t TO PLAY MORE PRESS 0");
+    		  printf("\n\n\t OR TO GO TO MAIN MENU PRESS ANY OTHER NUMBER KEY ");
+    		  printf("\n\n\t");
+    		  scanf ("%d", &x);
+    		  if (x == 0)
+    		    {
+    		      goto theme;
+    		    }
+    		  else
+    		    {
+    		      goto start;
+    		    }
+    		}
+    	      case (2):
+    		{
+    		  system ("clear");
+    		  printf("\n\t1.Who wrote the famous book - 'We the people'?");
+    		  printf("\n\t1.T.N.Kaul  2.J.R.D. Tata  3.Khushwant Singh  4.Nani Palkhivala");
+    		  printf("\n\n\t");
+    		  scanf ("%d", &answer);
+    		  if (answer == 4)
+    		    {
+    		      points = points + 5;
+    		      printf ("\n\n\n\t\t YOUR ANSWER IS CORRECT.");
+    		    }
+    		  else
+    		    {
+    		      points = points - 1;
+    		      printf ("\n\n\n\t\t WRONG !!! CORRECT ANSWER IS 4.");
+    		    }
+    		  system ("clear");
+    		  printf("\n\t2.Who is the author of the book 'Nineteen Eighty Four'?");
+    		  printf("\n\t1.Thomas Hardy  2.Emile Zola  3.George Orwell  4.Walter Scott");
+    		  printf("\n\n\t");
+    		  scanf ("%d", &answer);
+    		  if (answer == 3)
+    		    {
+    		      points = points + 5;
+    		      printf ("\n\n\n\t\t YOUR ANSWER IS CORRECT.");
+    		    }
+    		  else
+    		    {
+    		      points = points - 1;
+    		      printf ("\n\n\n\t\t WRONG !!! CORRECT ANSWER IS 3.");
+    		    }
+    		  system ("clear");
+    		  printf("\n\t3.Which of the following is NOT written by Munshi Premchand?");
+    		  printf("\n\t1.Gaban  2.Godan  3.Guide  4.Manasorovar");
+    		  printf("\n\n\t");
+    		  scanf ("%d", &answer);
+    		  if (answer == 3)
+    		    {
+    		      points = points + 5;
+    		      printf ("\n\n\n\t\t YOUR ANSWER IS CORRECT.");
+    		    }
+    		  else
+    		    {
+    		      points = points - 1;
+    		      printf ("\n\n\n\t\t WRONG !!! CORRECT ANSWER IS 3.");
+    		    }
+    		  system ("clear");
+    		  printf("\n\t4.Which of the following books has been written by Vikram Seth?");
+    		  printf("\n\t1.My God Died Young  2.Islamic Bomb  3.Look Back in Anger  4.A Suitable Boy");
+    		  printf("\n\n\t");
+    		  scanf ("%d", &answer);
+    		  if (answer == 4)
+    		    {
+    		      points = points + 5;
+    		      printf ("\n\n\n\t\t YOUR ANSWER IS CORRECT.");
+    		    }
+    		  else
+    		    {
+    		      points = points - 1;
+    		      printf ("\n\n\n\t\t WRONG !!! CORRECT ANSWER IS 4.");
+    		    }
+    		  system ("clear");
+    		  printf("\n\t5. Who wrote the famous book - 'We the people'?");
+    		  printf("\n\t1.T.N.Kaul  2.J.R.D. Tata  3.Khushwant Singh  4.Nani Palkhivala");
+    		  printf("\n\n\t");
+    		  scanf ("%d", &answer);
+    		  if (answer == 4)
+    		    {
+    		      points = points + 5;
+    		      printf ("\n\n\n\t\t YOUR ANSWER IS CORRECT.");
+    		    }
+    		  else
+    		    {
+    		      points = points - 1;
+    		      printf ("\n\n\n\t\t WRONG !!! CORRECT ANSWER IS 4.");
+    		    }
+    		  system ("clear");
+    		  printf ("\n\t\tYOUR TOTAL SCORE IS : %d", points);
+    		  printf ("\n\t TO PLAY MORE PRESS 0");
+    		  printf
+    		    ("\n\t OR TO GO TO MAIN MENU PRESS ANY OTHER NUMBER KEY ");
+    		  scanf ("%d", &x);
+    		  if (x == 0)
+    		    {
+    		      goto theme;
+    		    }
+    		  else
+    		    {
+    		      goto start;
+    		    }
+    		}
+    	      case (3):
+    		{
+    		  system ("clear");
+    		  printf("\n\t1. What is the new name of ancient city 'Gulbarga'?");
+    		  printf("\n\t1.Belagavi  2.Kalaburagi  3.Palakkad  4.Kollam");
+    		  printf("\n\n\t");
+    		  scanf ("%d", &answer);
+    		  if (answer == 2)
+    		    {
+    		      points = points + 5;
+    		      printf ("\n\n\n\t\t YOUR ANSWER IS CORRECT.");
+    		    }
+    		  else
+    		    {
+    		      points = points - 1;
+    		      printf ("\n\n\n\t\t WRONG !!! CORRECT ANSWER IS 2.");
+    		    }
+    		  system ("clear");
+    		  printf("\n\t2. 'Tuticorin' was the old name of which city?");
+    		  printf("\n\t1.Nagercoil  2.Kollam  3.Thirukkural  4.Thoothukudi");
+    		  printf("\n\n\t");
+    		  scanf ("%d", &answer);
+    		  if (answer == 4)
+    		    {
+    		      points = points + 5;
+    		      printf ("\n\n\n\t\t YOUR ANSWER IS CORRECT.");
+    		    }
+    		  else
+    		    {
+    		      points = points - 1;
+    		      printf ("\n\t WRONG !!! CORRECT ANSWER IS 4.");
+    		    }
+    		  system ("clear");
+    		  printf ("\n\t3. 'Calicut' was the old name of which city?");
+    		  printf ("\n\t1.Mysore  2.Kochi  3.Kozhikode  4.Ernakulam");
+    		  printf("\n\n\t");
+    		  scanf ("%d", &answer);
+    		  if (answer == 3)
+    		    {
+    		      points = points + 5;
+    		      printf ("\n\n\n\t\t YOUR ANSWER IS CORRECT.");
+    		    }
+    		  else
+    		    {
+    		      points = points - 1;
+    		      printf ("\n\n\n\t\t WRONG !!! CORRECT ANSWER IS 3.");
+    		    }
+    		  system ("clear");
+    		  printf ("\n\t4. What was the old name of 'Kanyakumari'?");
+    		  printf("\n\t1.Cape Comorin  2.Coromandel  3.Palghat  4.Kovalam");
+    		  printf("\n\n\t");
+    		  scanf ("%d", &answer);
+    		  if (answer == 1)
+    		    {
+    		      points = points + 5;
+    		      printf ("\n\n\n\t\t YOUR ANSWER IS CORRECT.");
+    		    }
+    		  else
+    		    {
+    		      points = points - 1;
+    		      printf ("\n\n\n\t\t WRONG !!! CORRECT ANSWER IS 1.");
+    		    }
+    		  system ("clear");
+    		  printf ("\n\t5. 'Sakchi' was the old name of which city?");
+    		  printf("\n\t1.Bokaro  2.Jamshedpur  3.Dhanbad  4.Durgapur");
+    		  printf("\n\n\t");
+    		  scanf ("%d", &answer);
+    		  if (answer == 2)
+    		    {
+    		      points = points + 5;
+    		      printf ("\n\n\n\t\t YOUR ANSWER IS CORRECT.");
+    		    }
+    		  else
+    		    {
+    		      points = points - 1;
+    		      printf ("\n\n\n\t\t WRONG !!! CORRECT ANSWER IS 2.");
+    		    }
+    		  system ("clear");
+    		  printf ("\n\t\tYOUR TOTAL SCORE IS : %d", points);
+    		  printf ("\n\t TO PLAY MORE PRESS 0");
+    		  printf("\n\t OR TO GO TO MAIN MENU PRESS ANY OTHER NUMBER KEY ");
+    		  printf("\n\n\t");
+    		  scanf ("%d", &x);
+    		  if (x == 0)
+    		    {
+    		      goto theme;
+    		    }
+    		  else
+    		    {
+    		      goto start;
+    		    }
+    		}
+    
+    		break;
+    	      case (4):
+    		{
+    		  system ("clear");
+    		  printf("\n\t1. Lord Rama belonged to the following era or Yuga");
+    		  printf("\n\t1.Dwapara  2.Thretayuga  3.None of the above  4.Kali");
+    		  printf("\n\n\t");
+    		  scanf ("%d", &answer);
+    		  if (answer == 2)
+    		    {
+    		      points = points + 5;
+    		      printf ("\n\n\n\t\t YOUR ANSWER IS CORRECT.");
+    		    }
+    		  else
+    		    {
+    		      points = points - 1;
+    		      printf ("\n\n\n\t\t WRONG !!! CORRECT ANSWER IS 2.");
+    		    }
+    		  system ("clear");
+    		  printf("\n\t2. Who among the following is the consort of Lord Vishnu?");
+    		  printf("\n\t1.Durga  2.Lakshmi  3.Uma  4.Kali");
+    		  printf("\n\n\t");
+    		  scanf ("%d", &answer);
+    		  if (answer == 2)
+    		    {
+    		      points = points + 5;
+    		      printf ("\n\n\n\t\t YOUR ANSWER IS CORRECT.");
+    		    }
+    		  else
+    		    {
+    		      points = points - 1;
+    		      printf ("\n\n\n\t\t WRONG !!! CORRECT ANSWER IS 2.");
+    		    }
+    		  system ("clear");
+    		  printf("\n\t3. In Hindu mythology who is also called 'Mihira'?");
+    		  printf("\n\t1.Indra  2.Balrama  3.Surya  4.Bheema");
+    		  printf("\n\n\t");
+    		  scanf ("%d", &answer);
+    		  if (answer == 3)
+    		    {
+    		      points = points + 5;
+    		      printf ("\n\n\n\t\t YOUR ANSWER IS CORRECT.");
+    		    }
+    		  else
+    		    {
+    		      points = points - 1;
+    		      printf ("\n\n\n\t\t WRONG !!! CORRECT ANSWER IS 3.");
+    		    }
+    		  system ("clear");
+    		  printf("\n\t4. According to Hindu mythology King Kansa was the uncle of ?");
+    		  printf("\n\t1.Rama  2.Arjuna  3.Krishna  4.Duryodhana");
+    		  printf("\n\n\t");
+    		  scanf ("%d", &answer);
+    		  if (answer == 3)
+    		    {
+    		      points = points + 5;
+    		      printf ("\n\n\n\t\t YOUR ANSWER IS CORRECT.");
+    		    }
+    		  else
+    		    {
+    		      points = points - 1;
+    		      printf ("\n\n\n\t\t WRONG !!! CORRECT ANSWER IS 3.");
+    		    }
+    		  system ("clear");
+    		  printf("\n\t5. Name the vehicle of Ravana in which he could fly to");
+    		  printf("\n\tany destination and which had unlimited seating capacity");
+    		  printf("\n\t1.Aksha Ratham  2.Flying Horse  3.Pushpaka Vimanam  4.Garuda");
+    		  printf("\n\n\t");
+    		  scanf ("%d", &answer);
+    		  if (answer == 3)
+    		    {
+    		      points = points + 5;
+    		      printf ("\n\n\n\t\t YOUR ANSWER IS CORRECT.");
+    		    }
+    		  else
+    		    {
+    		      points = points - 1;
+    		      printf ("\n\n\n\tt WRONG !!! CORRECT ANSWER IS 3.");
+    		    }
+    		  system ("clear");
+    		  printf ("\n\t\tYOUR TOTAL SCORE IS : %d", points);
+    		  printf ("\n\t TO PLAY MORE PRESS 0");
+    		  printf("\n\t OR TO GO TO MAIN MENU PRESS ANY OTHER NUMBER KEY ");
+    		  printf("\n\n\t");
+    		  scanf ("%d", &x);
+    		  if (x == 0)
+    		    {
+    		      goto theme;
+    		    }
+    		  else
+    		    {
+    		      goto start;
+    		    }
+    		  break;
+    		}
+    	      case (5):
+    		{
+    		  system ("clear");
+    		  printf("\n\t1. Which Bangladesh all-rounder was the first and only cricketer");
+    		  printf("\n\tto score a century and claim a hat-trick in the same test match?");
+    		  printf("\n\t1.Mashrafe Mortaza  2.Sohag Gazi  3.Shakib Al Hasan  4.Khaled Mahmud");
+    		  printf("\n\n\t");
+    		  scanf ("%d", &answer);
+    		  if (answer == 2)
+    		    {
+    		      points = points + 5;
+    		      printf ("\n\n\n\t\t YOUR ANSWER IS CORRECT.");
+    		    }
+    		  else
+    		    {
+    		      points = points - 1;
+    		      printf ("\n\n\n\t\t WRONG !!! CORRECT ANSWER IS 2.");
+    		    }
+    		  system ("clear");
+    		  printf("\n\t2.Who won the Women Single's title in the U.S. Opens Tennis Tournament, 2018?");
+    		  printf("\n\t1.Serena Williams  2.Anastasija Sevastova  3.Naomi Osaka  4.Elena Vesnia");
+    		  printf("\n\n\t");
+    		  scanf ("%d", &answer);
+    		  if (answer == 3)
+    		    {
+    		      points = points + 5;
+    		      printf ("\n\n\n\t\t YOUR ANSWER IS CORRECT.");
+    		    }
+    		  else
+    		    {
+    		      points = points - 1;
+    		      printf ("\n\n\n\t\t WRONG !!! CORRECT ANSWER IS 3.");
+    		    }
+    		  system ("clear");
+    		  printf("\n\t3. Who among the following has won the FIFA Player of the Year 2019?");
+    		  printf("\n\t1.Virgil van Dijk  2.Cristiano Ronaldo  3.Lionel Messi  4.Neymar");
+    		  printf("\n\n\t");
+    		  scanf ("%d", &answer);
+    		  if (answer == 3)
+    		    {
+    		      points = points + 5;
+    		      printf ("\n\n\n\t\t YOUR ANSWER IS CORRECT.");
+    		    }
+    		  else
+    		    {
+    		      points = points - 1;
+    		      printf ("\n\n\n\t\t WRONG !!! CORRECT ANSWER IS 3.");
+    		    }
+    		  system ("clear");
+    		  printf("\n\t4. When was the first sports policy was declared by Madhya Pradesh Government?");
+    		  printf("\n\t1.1983  2.1989  3.1985  4.1990");
+    		  printf("\n\n\t");
+    		  scanf ("%d", &answer);
+    		  if (answer == 2)
+    		    {
+    		      points = points + 5;
+    		      printf ("\n\n\n\t\t YOUR ANSWER IS CORRECT.");
+    		    }
+    		  else
+    		    {
+    		      points = points - 1;
+    		      printf ("\n\n\n\t\t WRONG !!! CORRECT ANSWER IS 2.");
+    		    }
+    		  system ("clear");
+    		  printf("\n\t5. Expedite System is related to which game?");
+    		  printf("\n\t1.Table Tennis  2.Tennis  3.Squash  4.Badminton");
+    		  printf("\n\n\t");
+    		  scanf ("%d", &answer);
+    		  if (answer == 1)
+    		    {
+    		      points = points + 5;
+    		      printf ("\n\n\n\t\t YOUR ANSWER IS CORRECT.");
+    		    }
+    		  else
+    		    {
+    		      points = points - 1;
+    		      printf ("\n\n\n\t\t WRONG !!! CORRECT ANSWER IS 1.");
+    		    }
+    		  system ("clear");
+    		  printf ("\n\t\tYOUR TOTAL SCORE IS : %d", points);
+    		  printf ("\n\t TO PLAY MORE PRESS 0");
+    		  printf
+    		    ("\n\t OR TO GO TO MAIN MENU PRESS ANY OTHER NUMBER KEY ");
+    		  printf ("\n\n\t");
+    		  scanf ("%d", &x);
+    		  if (x == 0)
+    		    {
+    		      goto theme;
+    		    }
+    		  else
+    		    {
+    		      goto start;
+    		    }
+    		  break;
+    
+    		}
+    	      }
+    	case (2):
+    	    {
+    	      system ("clear");
+    	      printf ("\n\t\t %s ,YOUR SCORE IS :%d", name, points);
+    	      printf ("\n\t TO GO TO THE MAIN MENU PRESS 0");
+    	      printf ("\n\t OR TO EXIT GAME PRESS ANY OTHER KEY ");
+    	      scanf ("%d", &x);
+    	      if (x == 0)
+    		{
+    		  goto start;
+    		}
+    	      else
+    		{
+    		  goto end;
+    		}
+    	      break;
+    	    }
+    	case (3):
+    	    {
+    	      system ("clear");
+    	      points = 0;
+    	      printf ("\n\t\t NOW YOUR SCORE HAS BEEN RESET TO 0");
+    	      printf ("\n\t TO GO TO THE MAIN MENU PRESS 0");
+    	      printf ("\n\t OR TO EXIT GAME PRESS ANY OTHER KEY ");
+    	      scanf ("%d", &x);
+    	      if (x == 0)
+    		{
+    		  goto start;
+    		}
+    	      else
+    		{
+    		  goto end;
+    		}
+    	      break;
+    	    }
+    	case (4):
+    	    {
+    	      system ("clear");
+    	      printf ("\n\t\t\t\nINSTRUCTIONS");
+    	      printf ("\n\t1.IT IS COMPULSORY TO ANSWER ALL QUESTIONS.");
+    	      printf ("\n\t2.YOU CAN SELECTE ONLY ONE THEME AT A TIME.");
+    	      printf
+    		("\n\t3.+5 POINTS WILL BE AWARDED TO THE PARTICIPANT FOR EACH CORRECT ANSWER.");
+    	      printf
+    		("\n\t4.-1 POINT WILL BE DEDUCTED FOR EACH WRONG ANSWER.");
+    	      printf ("\n\t TO GO TO THE MAIN MENU PRESS 0");
+    	      printf ("\n\t OR TO EXIT GAME PRESS ANY OTHER KEY ");
+    	      scanf ("%d", &x);
+    	      if (x == 0)
+    		{
+    		  goto start;
+    		}
+    	      else
+    		{
+    		  goto end;
+    		}
+    	      break;
+    	    }
+    	case (5):
+    	    {
+    	      goto end;
+    	    }
+    	  }
+    
+    	}
+        }
+      else
+        {
+        end:
+          system ("clear");
+          printf ("\n\n\t\t\t\tTHANK YOU");
+        }
+      return 0;
+    }
