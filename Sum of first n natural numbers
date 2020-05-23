@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main()
+{
+    int x,sum;
+    printf("enter any no. :");
+    scanf("%d",&x);
+    sum=((x*x)+x)/2;
+    printf("%d",sum);
+
+    return 0;
+}
