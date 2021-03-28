@@ -1,0 +1,21 @@
+#include<stdio.h>
+
+int fact(int n){
+    static int i=1;
+    static int a=1;
+    if (i<=n)
+    {
+        a=a*i;
+        i++;
+        fact(n);
+    }  
+
+    return a;    
+}
+
+int main(void){
+    int number=7;
+    int result= fact(number);
+    printf("%d",result);
+    return 0;
+}
