@@ -1,0 +1,27 @@
+#include<stdio.h>
+
+int e(int x,int n){
+    static int i=1;
+    static int result=0;
+    if(i<=n){
+        double numerator=1;
+        double denometor=1;
+        for (int j = 1; j <= i; j++)
+        {
+            numerator=numerator*x;
+        }
+        for (int k = 1; k <=i; k++)
+        {
+            denometor=denometor*k;
+        }
+        result=result+(numerator/denometor);
+        i++;
+        e(x,n);
+    }
+    return result;
+}
+int main(){
+    int x=5,n=199;
+    printf("%d",1+e(x,n));
+    return 0;
+}
