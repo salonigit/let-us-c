@@ -1,0 +1,25 @@
+#include<stdio.h>
+
+int s(int n){
+    static int i=1;
+    if (i<=n-2)
+    {
+    static int a=0;
+    static int b=1;
+    int c;
+    c=a+b;
+    printf("%d\n",c);
+    a=b;
+    b=c;
+    i++;
+    s(n);
+}
+}
+
+int main(){
+    int n=11;
+    printf("0\n");
+    printf("1\n");
+    s(n);
+    return 0;
+}
